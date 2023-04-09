@@ -1,0 +1,14 @@
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\StreamingPlatform.exe.config
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\StreamingPlatform.exe
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\StreamingPlatform.pdb
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\Guna.UI2.dll
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.csproj.AssemblyReference.cache
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.csproj.SuggestedBindingRedirects.cache
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.Form1.resources
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.Properties.Resources.resources
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.csproj.GenerateResource.cache
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.csproj.CoreCompileInputs.cache
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.csproj.CopyComplete
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.exe
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.pdb
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.MovieInfo.resources
