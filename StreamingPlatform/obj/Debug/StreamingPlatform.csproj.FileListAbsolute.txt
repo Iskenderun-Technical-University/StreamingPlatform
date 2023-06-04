@@ -15,3 +15,8 @@ C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\Database.md
 C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\Database_log.ldf
 C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.MovieDetails.resources
 C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.MainMenu.resources
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\Interop.WMPLib.dll
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\Interop.WMPLib.dll
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.csproj.ResolveComReference.cache

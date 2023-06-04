@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace StreamingPlatform
 {
@@ -21,18 +22,16 @@ namespace StreamingPlatform
         private Rectangle originalFormSize;
         private Rectangle panel2OriginalRectangle;
         public static MovieDetails movieDetails = new MovieDetails();
-        
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\Database.mdf;Integrated Security=True");
+
         private void MenuBtn_Click(object sender, EventArgs e)
         {
-
-            
             panel2.Hide();
             MoviesList.Hide();
             if (openstate == false)
             {
                 openstate = true;
                 SideMenu.Size = new Size(295, 565);
-                
             }
             else
             {
