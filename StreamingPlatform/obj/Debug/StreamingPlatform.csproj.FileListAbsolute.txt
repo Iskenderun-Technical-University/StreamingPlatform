@@ -20,3 +20,5 @@ C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\bin\Debug\AxInterop.W
 C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\Interop.WMPLib.dll
 C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.csproj.ResolveComReference.cache
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.MediaPlayer.resources
+C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\obj\Debug\StreamingPlatform.AdminPanel.resources

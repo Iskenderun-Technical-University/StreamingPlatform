@@ -21,35 +21,36 @@ namespace StreamingPlatform
         bool openstate = true;
         private Rectangle originalFormSize;
         private Rectangle panel2OriginalRectangle;
-        public static MovieDetails movieDetails = new MovieDetails();
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\Database.mdf;Integrated Security=True");
 
         private void MenuBtn_Click(object sender, EventArgs e)
         {
-            panel2.Hide();
+            HighightPanel.Hide();
             MoviesList.Hide();
             if (openstate == false)
             {
                 openstate = true;
                 SideMenu.Size = new Size(295, 565);
+                MoviesList.Padding = new Padding(37, 5, 0, 0);
             }
             else
             {
                 openstate = false;
                 SideMenu.Size = new Size(70, 565);
+                MoviesList.Padding = new Padding(0, 0, 0, 0);
             }
-            panel2.Show();
+            HighightPanel.Show();
             MoviesList.Show();
         }
 
         private void guna2ImageButton4_Click(object sender, EventArgs e)
         {
-            panel2.BackgroundImage = imageList1.Images[1];
+            HighightPanel.BackgroundImage = imageList1.Images[1];
         }
 
         private void guna2ImageButton3_Click(object sender, EventArgs e)
         {
-            panel2.BackgroundImage = imageList1.Images[0];
+            HighightPanel.BackgroundImage = imageList1.Images[0];
 
         }
 
@@ -71,7 +72,7 @@ namespace StreamingPlatform
         private void Form1_Load(object sender, EventArgs e)
         {
             originalFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Size.Width, this.Size.Height);
-            panel2OriginalRectangle = new Rectangle(panel2.Location.X, panel2.Location.Y, panel2.Size.Width, panel2.Size.Height);
+            panel2OriginalRectangle = new Rectangle(HighightPanel.Location.X, HighightPanel.Location.Y, HighightPanel.Size.Width, HighightPanel.Size.Height);
 
         }
 
@@ -90,22 +91,37 @@ namespace StreamingPlatform
 
         private void guna2ImageButton4_MouseEnter(object sender, EventArgs e)
         {
-            guna2ImageButton4.ShadowDecoration.Enabled = true;
+            RightNav.ShadowDecoration.Enabled = true;
         }
 
         private void guna2ImageButton4_MouseLeave(object sender, EventArgs e)
         {
-            guna2ImageButton4.ShadowDecoration.Enabled = false;
+            RightNav.ShadowDecoration.Enabled = false;
         }
 
         private void guna2ImageButton3_MouseEnter(object sender, EventArgs e)
         {
-            guna2ImageButton3.ShadowDecoration.Enabled = true;
+            LeftNav.ShadowDecoration.Enabled = true;
         }
 
         private void guna2ImageButton3_MouseLeave(object sender, EventArgs e)
         {
-            guna2ImageButton3.ShadowDecoration.Enabled = false;
+            LeftNav.ShadowDecoration.Enabled = false;
+        }
+
+        private void UserSettings_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                // Show the context menu at the location of the mouse click
+                UserMenu.Show(UserSettings, e.Location);
+            }
+        }
+
+        private void enterAdminPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.ShowDialog();
         }
     }
 }

@@ -23,9 +23,11 @@ namespace StreamingPlatform
 
         private void MoviePicture_Click(object sender, EventArgs e)
         {
+            MovieDetails movieDetails = new MovieDetails();
             this.Size = new Size(FormWidth-4, FormHeight-4);
             MoviePicture.Size = new Size(276, PictureHeight -4);
             timer1.Start();
+           movieDetails.ShowDialog();
         }
 
         private void MovieInfo_MouseEnter(object sender, EventArgs e)
@@ -36,10 +38,15 @@ namespace StreamingPlatform
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Size = new Size(FormWidth + 10, FormHeight + 10);
-            MoviePicture.Size = new Size(290, PictureHeight + 10);
-            timer1.Stop();
-            MainMenu.movieDetails.ShowDialog();
+            try
+            {
+                this.Size = new Size(FormWidth + 10, FormHeight + 10);
+                MoviePicture.Size = new Size(290, PictureHeight + 10);
+                timer1.Stop();
+            }
+            catch(Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void MoviePicture_MouseLeave(object sender, EventArgs e)

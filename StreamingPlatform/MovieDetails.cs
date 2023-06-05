@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AxWMPLib;
+using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,30 +25,6 @@ namespace StreamingPlatform
         long fileSizeInBytes;
         SqlConnection con= new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kg462\Desktop\StreamingPlatform\StreamingPlatform\Database.mdf;Integrated Security=True");
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                openFileDialog.Filter = "Video Files|*.avi;*.mp4;*.mov;*.mkv;*.flv;*.wmv|All Files|*.*";
-                openFileDialog.Title = "Select a Video File";
-
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Get the selected file stream
-                    using (Stream fileStream = openFileDialog.OpenFile())
-                    {
-                        // Get the path of the selected video file
-                         videoPath = ((FileStream)fileStream).Name;
-                        ShowTrailer.URL= videoPath;
-                        fileSizeInBytes = fileStream.Length;
-                        //label1.Text =fileSizeInBytes + videoPath ;
-                        //SaveVideo();
-                        // Use the videoPath variable as needed
-                    }
-                }
-            }
-        }
-
         private void CreateVideoFile()
         {
             con.Open();
@@ -68,6 +46,18 @@ namespace StreamingPlatform
                     cmd.ExecuteNonQuery();
                     con.Close();
             }
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                mediaPlayer.VideoPlayer.URL = "";
+                mediaPlayer.ShowTrailer.Show();
+                this.Refresh();
+                this.Hide();
+            }
+            catch (Exception ex) { }
         }
     }
 }
